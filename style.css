@@ -1,0 +1,61 @@
+.med_img{
+    width: 70px;
+    height: 70px;
+}
+p{
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body
+{
+  color: white;
+  background: linear-gradient(rgba(233,160,249,100),rgba(105,218,250,100));
+  background-repeat: no-repeat;
+  padding-bottom: 10px;
+  background-color: rgb(105,218,250);
+}
+#camera,#result{
+    border: 5px dotted black;
+    width: 350px;
+    height: 300px;
+}
+#result_med_name{
+    color: black;
+}
+.med_name{
+    font-size: 40px;
+}
+.med{
+    font-size: 48px;
+}
+.heading{
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+}
+label{
+    font-size: 18px;
+    color: rgb(9, 9, 104);
+    padding: 6px;
+    border-radius: 10px;
+    border: 3px solid rgb(73, 4, 73);
+    background-color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+h4{
+    color: rgb(45, 9, 78);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1,h2{
+    padding: 10px;
+    font-family: 'Mate SC', serif;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    color: black;
+    font-size: 25px;
+}

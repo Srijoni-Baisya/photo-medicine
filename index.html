@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Pattaya&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            text-align: center;
+            background: linear-gradient(rgba(233,160,249,100),rgba(105,218,250,100));
+            background-color: rgb(105,218,250);
+        }
+        h1{
+            font-family: 'Mate SC', serif;
+            color: darkblue;
+        }
+        h3{
+            font-family: 'Pattaya', sans-serif;
+            color: purple;
+        }
+    </style>
+    </head>
+
+    <body class="container">
+        <h1>Happy Anniversary</h1>
+        <br>
+        <h3>Ma and Baba, wishing you a happy marriage anniversary. I would like to share this small web application with you which I have created. I have tried to make a collage, where you can click the images and get their respective details. Besides, there is a medicine recognizer which is trained to recognize some of your common medicines. You can take the snapshot of the medicine using the webcam and know its usage.</h3>
+        <br>
+        <img src="photo.jpg" class="col-lg-6 col-sm-6 col-md-12 col-xs-12" onclick="img()">
+        <img src="medicine.png" class="col-lg-6 col-sm-6 col-md-12 col-xs-12" onclick="med()">
+    </body>
+    <script>
+        function img(){
+            window.location="image.html";
+        }
+        function med(){
+            window.location="medicine.html";
+        }
+    </script>
+</html>

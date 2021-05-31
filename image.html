@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<head>
+    <title>Flip Image</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Pattaya&display=swap" rel="stylesheet">
+
+    <style>
+
+    html{
+        height: 100%;
+    }
+
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(245,109,230,80),rgba(74,217,254,82));
+    background-repeat: no-repeat;
+    background-color:rgb(74,217,254) ;
+    }
+
+    .flip-box {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    border: 1px solid darkblue;
+    perspective: 1000px;
+    }
+
+    .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+    }
+
+    .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    }
+
+    .flip-box-front {
+    background-color: cornflowerblue;
+    color: black;
+    }
+
+    .flip-box-back {
+    background-color: cyan;
+    color: black;
+    transform: rotateY(180deg);
+    padding-top: 30px;
+    }
+
+    h1,h4{
+        font-family: 'Pattaya', sans-serif;
+        
+    }
+
+    h2,h3{
+        font-family: 'Mate SC', serif;
+    }
+    h4{
+        font-size: 23px;
+        color: rgb(47, 12, 88);
+    }
+    h3{
+        font-size: 30px;
+    }
+    h2{
+        color: rgb(47, 12, 88);
+    }
+    </style>
+
+</head>
+
+<body class="container">
+    <center>
+    <h1>Happy Anniversary</h1>
+    <br>
+    <h2 >Flip the images and the surprise messages will be revealed</h2>
+    <br>
+    <div >
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="Ma.jpg" alt="Ma" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>My Mother</h3>
+                    <h4>My Best Friend</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="Baba.jpg" alt="Baba" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>My Father</h3>
+                    <h4>The backbone of our family</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic1.jpg" alt="img1" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>Looking suberb !</h3>
+                    <h4>At a wedding reception</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic2.jpg" alt="img2" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>A blissfully happy and simple life</h3>
+                    <h4>At the sea beach</h4>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic3.jpg" alt="img3" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>Live peacefully just like this</h3>
+                    <h4>At Mandarmoni</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic4.jpg" alt="img4" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>Old Memories</h3>
+                    <h4>Durga Puja</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic6.jpg" alt="img5" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>A chilly weather</h3>
+                    <h4>At Sonar Bangla, Taki</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic5.jpg" alt="img6" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>Memories of a foreign trip</h3>
+                    <h4>At Penang, Malaysia</h4>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic7.jpg" alt="img7" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>A lovely couple</h3>
+                    <h4>At Sonar Bangla, Kolaghat</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic9.jpg" alt="img8" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>Watching the splendid view from the houseboat</h3>
+                    <h4>At Alleppey Backwaters, Kerala</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic8.jpg" alt="img9" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>Simple yet Beautiful</h3>
+                    <h4>At a wedding reception 4 years back</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic11.jpg" alt="img10" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>A pretty couple</h3>
+                    <h4>At Kuala Lumpur, Malaysia</h4>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic12.jpg" alt="img11" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>May Ma Durga shower her blessings on you</h3>
+                    <h4>Pandal Hopping</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic13.jpg" alt="img12" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>Enjoy every moment</h3>
+                    <h4>At a wedding anniversary</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic14.jpg" alt="img13" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>An Unforgettable Experience</h3>
+                    <h4>Living in a tent at Kuldiah</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="pic15.jpg" alt="img14" style="width:250px;height:250px;">
+                </div>
+                <div class="flip-box-back">
+                    <h3>Looking bright !</h3>
+                    <h4>A family get together at a restaurant</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</center>
+</body>

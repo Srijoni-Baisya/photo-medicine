@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Medicine Recognition App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Pattaya&display=swap" rel="stylesheet">
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="container">
+        <center>
+        <h1 class="btn btn-danger heading">MEDICINE RECOGNITION APP &#9877;</h1>
+        <br>
+        <h2 >Take the snapshot of any one of the following medicines to know its details : </h2> 
+        <br><hr><br>  
+        <div class="btn btn-warning heading" style="width: 70%;">
+            <p>Unienzyme <span><img  src="med1.png" class="med_img"></span></p> <hr>
+            <p>Gelusil <span><img src="med2.jpg" class="med_img"></span></p> <hr>
+            <p>Electral (ORS) <span><img src="med3.png" class="med_img"></span></p> <hr>
+            <p>O2 <span><img src="med4.png" class="med_img"></span></h4> <p><hr>
+            <p>Metrogyl 200 <span><img src="med5.png" class="med_img"></span></p> <hr>
+            <p> Calpol 650<span><img src="med6.jpg"class="med_img"></span></p> <hr>
+            <p>Pan 40 <span><img src="med7.jpg" class="med_img"></span></p> <hr>
+            <p>Bicozinc <span><img src="med8.png" class="med_img"></span></p> <hr>
+            <p>Metformin <span><img src="med9.jpg" class="med_img"></span></p> <hr>
+            <p>Metrogyl 400 <span><img src="med10.jpg" class="med_img"></span></p> <hr>
+        </div>
+<br><br>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Webcam Preview : </label>
+            <br>
+            <div id="camera"></div>
+            <br>
+            <button onclick="takeSnapshot()" class="btn btn-danger">Take Snapshot</button>
+            <br>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Prediction : </label>
+            <p class="gesture_name" id="result_med_name"></p>
+            <img class="med_img" id="update_med">
+            <br>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Snapshot : </label>
+            <br>
+            <div id="result"></div>
+            <br>
+            <button onclick="check()" class="btn btn-success">Identify Medicine</button>
+            <br>
+        </div>
+        
+    </center>
+    <script src="main.js"></script>
+    </body>
+</html>
