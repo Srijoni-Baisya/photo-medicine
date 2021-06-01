@@ -78,9 +78,31 @@ function gotResult(error,results){
             document.getElementById("update_med").src="med5.png";
             speak();
         }
-
-
-             
+        if(results[0].label=="Calpol 650"){
+            prediction="The medicine is Calpol 650, which is used to relieve fever and mild-to-moderate pain. It is also used to get relief from headache, toothache, migraine and other painful conditions.";
+            document.getElementById("update_med").src="med6.jpg";
+            speak();
+        }
+        if(results[0].label=="Pan 40"){
+            prediction="The medicine is Pan 40, which is used to treat stomach ulcers, gastroesophageal reflux disease and other acidity related problems.";
+            document.getElementById("update_med").src="med7.jpg";
+            speak();
+        }
+        if(results[0].label=="Bicozinc"){
+            prediction="The medicine is Bicozinc, which provides support in vitamin and mineral deficiency.";
+            document.getElementById("update_med").src="med8.png";
+            speak();
+        }
+        if(results[0].label=="Metformin"){
+            prediction="The medicine is Metformin, which is used to control high blood sugar in patients with type 2 diabetes.";
+            document.getElementById("update_med").src="med9.jpg";
+            speak();
+        }
+        if(results[0].label=="Metrogyl 400"){
+            prediction="The medicine is Metrogyl 400, which is used to treat diarrhoea or dysentery due to parasitic infections such as amoebiasis.";
+            document.getElementById("update_med").src="med10.jpg";
+            speak();
+        }            
       
     }
 }
